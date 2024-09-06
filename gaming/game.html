@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="screen">
+            <div class="computer" id="computer-box">?</div>
+            <div class="user" id="user-box" >?</div>
+        </div>
+        <div class="buttons">
+            <button onclick="setUserGuess(0)">0</button>
+            <button onclick="setUserGuess(1)">1</button>
+            <button onclick="setUserGuess(2)">2</button>
+            <button onclick="setUserGuess(3)">3</button>
+            <button onclick="setUserGuess(4)">4</button>
+            <button onclick="setUserGuess(5)">5</button>
+            <button onclick="setUserGuess(6)">6</button>
+            <button onclick="setUserGuess(7)">7</button>
+            <button onclick="setUserGuess(8)">8</button>
+            <button onclick="setUserGuess(9)">9</button>
+            <button id="enter" onclick="submitGuess()">Enter</button>
+            <button id="reset" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+     
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="result-message"></h2>
+            <button onclick="resetGame()">Let's Play Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
